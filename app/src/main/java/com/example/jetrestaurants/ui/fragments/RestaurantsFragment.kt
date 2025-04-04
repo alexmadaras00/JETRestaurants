@@ -1,4 +1,4 @@
-package com.example.jetrestaurants.ui.viewmodel
+package com.example.jetrestaurants.ui.fragments
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jetrestaurants.R
+import com.example.jetrestaurants.ui.viewmodel.RestaurantsViewModel
 
 class RestaurantsFragment : Fragment() {
 
@@ -28,4 +29,5 @@ class RestaurantsFragment : Fragment() {
     ): View {
         return inflater.inflate(R.layout.fragment_restaurants, container, false)
     }
+
 }
