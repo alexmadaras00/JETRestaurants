@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_jet"
-    app:startDestination="@id/restaurantsFragment2">
+    app:startDestination="@id/restaurantsFragment">
     <fragment
-        android:id="@+id/restaurantsFragment2"
+        android:id="@+id/restaurantsFragment"
         android:name="com.example.jetrestaurants.ui.fragments.RestaurantsFragment"
         android:label="fragment_restaurants"
         tools:layout="@layout/fragment_restaurants" />
@@ -16,6 +16,6 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_restaurantsFragment2"
-            app:destination="@id/restaurantsFragment2" />
+            app:destination="@id/restaurantsFragment" />
     </fragment>
 </navigation>
