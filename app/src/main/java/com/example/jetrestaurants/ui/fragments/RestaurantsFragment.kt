@@ -7,27 +7,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jetrestaurants.R
+import com.example.jetrestaurants.databinding.FragmentRestaurantsBinding
 import com.example.jetrestaurants.ui.viewmodel.RestaurantsViewModel
 
 class RestaurantsFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = RestaurantsFragment()
-    }
+    private var _binding: FragmentRestaurantsBinding? = null
+    private val binding get()  = _binding
 
     private val viewModel: RestaurantsViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // TODO: Use the ViewModel
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.fragment_restaurants, container, false)
+    ): View? {
+        _binding = FragmentRestaurantsBinding.inflate(inflater)
+        binding?.executePendingBindings()
+        return binding?.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding?.apply {
+            val recyclerViewRestaurants = rvRestaurants
+        }
     }
 
 }
