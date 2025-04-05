@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">JETRestaurants</string>
+    <string name="get_restaurants" translatable="false">Get Restaurants</string>
+</resources>
