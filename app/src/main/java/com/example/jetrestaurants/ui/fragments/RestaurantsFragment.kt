@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.jetrestaurants.R
 import com.example.jetrestaurants.databinding.FragmentRestaurantsBinding
+import com.example.jetrestaurants.ui.adapter.RestaurantsAdapter
 import com.example.jetrestaurants.ui.viewmodel.RestaurantsViewModel
 
 class RestaurantsFragment : Fragment() {
@@ -34,6 +34,10 @@ class RestaurantsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding?.apply {
             val recyclerViewRestaurants = rvRestaurants
+            val adapterRestaurants = RestaurantsAdapter()
+            viewModel.getRestaurants().observe(viewLifecycleOwner){
+                restaurants -> println("Restaurants are: $restaurants")
+            }
         }
     }
 
