@@ -2,8 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".ui.fragments.SplashFragment">
     <data>
         <variable
@@ -11,9 +9,9 @@
             type="com.example.jetrestaurants.ui.viewmodel.SplashViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSplash"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.fragments.SplashFragment">
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/btnGetRestaurants"
