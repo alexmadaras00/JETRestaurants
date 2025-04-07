@@ -28,4 +28,7 @@ class RestaurantsViewModel : ViewModel() {
                 println("Initial response Retrofit is: $e")
             }
         }
+
+
+
 }
