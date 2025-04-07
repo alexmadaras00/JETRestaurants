@@ -5,4 +5,5 @@
     <string name="rating_with_star" translatable="false">⭐%s</string>
     <!-- or -->
     <string name="format_rating">⭐%s</string>
+    <string name="nearby_ec4m7rf">Nearby EC4M7RF:</string>
 </resources>
