@@ -1,3 +1,3 @@
 package com.example.jetrestaurants.data.entity
 
-data class Cuisine()
+data class Cuisine(var name: String, var uniqueName: String){}

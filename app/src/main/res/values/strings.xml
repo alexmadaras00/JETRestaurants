@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">JETRestaurants</string>
     <string name="get_restaurants" translatable="false">Get Restaurants</string>
+    <string name="address" translatable="false">@{item.address.firstLine}+ item.address.city + \", \" + item.address.postalCode}</string>
+    <string name="rating_with_star" translatable="false">⭐%s</string>
+    <!-- or -->
+    <string name="format_rating">⭐%s</string>
 </resources>
