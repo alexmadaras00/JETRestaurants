@@ -5,14 +5,13 @@
 This project is my work for the assessment day
 
 ## Technology Stack
-
-*   [List the main technologies used in your project.  For example:]
-    *   Kotlin
-    *   Android SDK
-    *   XML layouts
-    *   Retrofit (if using a network API)
-    *   ViewModel
-    *   LiveData and StateFlow
+*
+     *     Kotlin
+     *   Android SDK
+     *   XML layouts
+     *   Retrofit (if using a network API)
+     *   ViewModel
+     *   LiveData and StateFlow
     
 
 ## Prerequisites
