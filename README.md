@@ -5,7 +5,7 @@
 This project is my work for the assessment day
 
 ## Technology Stack
-*
+
      *     Kotlin
      *   Android SDK
      *   XML layouts
