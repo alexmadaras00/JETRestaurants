@@ -16,7 +16,6 @@ class RestaurantsViewModel : ViewModel() {
             try {
                 val postCode = "EC4M7RF"
                 val response = RetrofitInstance.api.getRestaurants(postCode)
-                println("Initial response Retrofit is: $response")
                 val restaurantsRepository = RestaurantRepositoryImpl()
                 restaurantsRepository.parseResponse(response).collect{
                     queriedResponse -> restaurantsRepository.filterData(queriedResponse).collect { filteredResponse ->
