@@ -44,3 +44,15 @@ This project is my work for the assessment day
     *   In Android Studio, select the desired device/emulator from the device dropdown in the toolbar.
     *   Click the "Run" button (it looks like a green play icon) or press `Shift+F10` (Windows/Linux) or `Ctrl+R` (macOS).
     *   Choose the app module to run (usually "app").
+
+
+## Experience
+
+### Unclear assumptions 
+As no API restrictions were specified, my initial thought was to use GraphQL, as we only want to extract certain fields. However, I decided to use REST API, as GraphQL requires POST requests, which were not possible for this API.
+My solution is integrated in an Android App, using MVVM Clean Architecture, and fetching APIs using Retrofit.
+In the UI I decided to implement 2 fragments in one activity (principle recommended by the Android documentation), where the top 10 restaurants are displayed in a Recycler View.
+
+### Improvements
+
+For improvements, I would write automated tests, firstly, for the Retrofit API calls, and then UI, Unit and Integration tests. 
